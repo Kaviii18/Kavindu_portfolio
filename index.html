@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavindu Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="header">
+        <a href="#home" class="logo">Kavindu
+            <span>Maleesha</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#Certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#testimonials">Testimonials</a> -->
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div data-aos="zoom-out" class="home-content">
+            <h1>Hi! It's <span>Kavindu</span></h1>
+            <h3 class="text-animation">I'm a&nbsp;<span></span></h3>
+            <p>Hi, I’m Kavindu Maleesha
+              I’m a dedicated Software Engineering undergraduate with a passion for programming, problem-solving, and developing innovative software solutions. I enjoy collaborating on open-source projects and always look forward to exploring new technologies.
+              
+              Currently, I'm focused on sharpening my skills and building creative, real-world applications.
+              You can connect with me using the following links.</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kavindu-maleesha-698123282/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Kaviii18"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="assets/img/resume/kavii cv.pdf" class="btn">Resume</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+
+        </div>
+        
+          <div class="home-img">
+            <img src="assets/img/kavindu prf.JPG" alt="Image Card">
+        </div>
+   
+
+
+
+
+        
+          
+        
+    </section>
+
+    <div class="skill-carousel-container">
+        <!-- skill carousel -->
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0" class="skill-carousel">
+            <img src="assets/img/net.jpg" alt=".net">
+            <img src="assets/img/java.png" alt="Java">
+            <img src="assets/img/java-script.png" alt="JavaScript">
+            <img src="assets/img/c-sharp.png" alt="C#">
+            <img src="assets/img/python.png" alt="Python">
+            <img src="assets/img/wordpress icon.webp" alt="Leaf">
+            <img src="assets/img/mysql.png" alt="MySQL">
+            <img src="assets/img/html.png" alt="HTML">
+            <img src="assets/img/text.png" alt="Text">
+            <img src="assets/img/xml.png" alt="XML">
+            <img src="assets/img/kotlin.jpg"Kotlin">
+            <img src="assets/img/firebase.png" alt="Firebase">
+        </div>
+    </div>
+
+   <!-- About Me Section -->
+<!-- About Me Section -->
+  <section id="about">
+    <div class="about-card">
+      
+      <!-- Image Section -->
+      <div class="about-img fade-in">
+        <img src="assets/img/kavindu img.JPG" alt="Kavindu Maleesha">
+      </div>
+
+      <!-- Text Section -->
+      <div class="about-text fade-in">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <strong>Kavindu Maleesha</strong>. Currently pursuing a Higher Diploma in Computer Software Engineering at Cardiff Metropolitan University, ICBT Campus. This program allows me to actively explore my passion for software development while expanding my knowledge of emerging technologies. I am continuously developing my skills in a wide range of programming languages and tools, including Java, JavaScript, PHP, C++, Python, HTML, CSS, the Spring Framework, and Android Studio.
+          <br><br>
+          My academic journey is further enriched by certifications from Cisco, Microsoft, SLIIT Open Learning, and the University of Moratuwa, reflecting my dedication to staying current with cutting-edge technologies and industry standards.
+          <br><br>
+          I am eager to gain hands-on experience through web developer or front-end developer internship opportunities, where I can tackle new challenges and apply my skills to real-world projects. I'm always open to connecting with others who share a passion for web development or are interested in collaborating. Feel free to reach out to me via email — I’d be happy to connect!
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scroll Fade-In Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+
+
+
+
+
+    
+
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="timeline-items">
+
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
+                class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Aug 2023 – Aug 2025</div>
+                <div class="timeline-content">
+                    <h3>Higher Diploma in Computing – Software Engineering</h3>
+                    <p>Currently pursuing a Higher Diploma in Computing – Software Engineering at Cardiff Metropolitan University (UK), focusing on modern software development, web technologies, and system design. </p>
+                </div>
+
+            </div>
+
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
+                class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Feb 2023 – Aug 2023</div>
+                <div class="timeline-content">
+                    <h3> Diploma in Information Technology</h3>
+                    <p>Completed a Diploma in Information Technology at ICBT Campus, covering fundamentals of programming, networking, databases, and IT systems.
+                         </p>
+                </div>
+
+            </div>
+
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0"
+                class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jan 2020 – Present</div>
+                <div class="timeline-content">
+                    <h3>G.C.E. Advanced Level</h3>
+                    <p>Studied G.C.E. Advanced Level in the Commerce stream with ICT as the main subject at Kularathna College, Ambalangoda.
+                         </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------Services---------------------------------------------------- -->
+    <h2 style="
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+">
+  Certificates
+</h2>
+
+
+    <div class="certificate-section"   >
+  
+      <!-- Certificate Blog Card 1 -->
+      <div class="certificate-card">
+        <div class="certificate-icon">
+          <i class="bi bi-card-checklist"></i>
+        </div>
+        <div class="certificate-info">
+          <h3 class="certificate-title">🏅HackX Jr. 2019 – Finalist</h3>
+          <p class="certificate-org">University of Kelaniya – Inter-School Hackathon</p>
+          <p class="certificate-desc">
+            Participated as a team member of Idea Boys representing Revatha College, Balapitiya and became a finalist at HackX Jr. 2019, organized by the Department of Industrial Management, University of Kelaniya.
+          </p>
+          <a href="assets/img/Hackx jr.pdf" target="_blank" class="btn-dark">View Certificate</a>
+        </div>
+      </div>
+  
+      <!-- Certificate Blog Card 2 -->
+      <div class="certificate-card">
+        <div class="certificate-icon">
+          <i class="bi bi-card-checklist"></i>
+        </div>
+        <div class="certificate-info">
+          <h3 class="certificate-title">🥈 DevHeads 2024 – 3rd Place Winner</h3>
+          <p class="certificate-org">ICBT Campus – Buildathon Competition</p>
+          <p class="certificate-desc">
+            Awarded Third Place at DevHeads: The Buildathon 2024, organized by the Computing Society of ICBT, for demonstrating exceptional performance and innovation in software development.
+          </p>
+          <a href="assets/img/Devheads.pdf" target="_blank" class="btn-dark">View Certificate</a>
+        </div>
+      </div>
+  
+      <!-- Add more certificate cards below -->
+
+       <!-- Certificate Blog Card 2 -->
+       <div class="certificate-card">
+        <div class="certificate-icon">
+          <i class="bi bi-card-checklist"></i>
+        </div>
+        <div class="certificate-info">
+          <h3 class="certificate-title">Python Programming Certificate </h3>
+          <p class="certificate-org">University of Moratuwa</p>
+          <p class="certificate-desc">
+            Successfully completed an online Python Programming course by the University of Moratuwa, covering core concepts like data types, control structures, functions, and basic problem-solving.
+          </p>
+          <a href="assets/img/python cer.pdf" target="_blank" class="btn-dark">View Certificate</a>
+        </div>
+      </div>
+
+       <!-- Certificate Blog Card 2 -->
+       <div class="certificate-card">
+        <div class="certificate-icon">
+          <i class="bi bi-card-checklist"></i>
+        </div>
+        <div class="certificate-info">
+          <h3 class="certificate-title">AI/ML Engineer - Stage 2 Certification</h3>
+          <p class="certificate-org">SLIIT</p>
+          <p class="certificate-desc">
+            Completed the AI/ML Engineer - Stage 2 program by SLIIT, focusing on advanced AI and Machine Learning concepts with practical applications.
+          </p>
+          <a href="assets/img/Ai 1.pdf" target="_blank" class="btn-dark">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- Certificate Blog Card 2 -->
+      <div class="certificate-card">
+        <div class="certificate-icon">
+          <i class="bi bi-card-checklist"></i>
+        </div>
+        <div class="certificate-info">
+          <h3 class="certificate-title">Server-side Web Programming</h3>
+          <p class="certificate-org">University of Moratuwa</p>
+          <p class="certificate-desc">
+            Participated in the Server-side Web Programming online course conducted by the University of Moratuwa’s Department of Information Technology. The program focused on backend web development fundamentals and practical implementation.
+          </p>
+          <a href="assets/img/Server-side_Web_Programming_E-Certificate.pdf" target="_blank" class="btn-dark">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- Certificate Blog Card 2 -->
+      <div class="certificate-card">
+        <div class="certificate-icon">
+          <i class="bi bi-card-checklist"></i>
+        </div>
+        <div class="certificate-info">
+          <h3 class="certificate-title">Azure AI Studio & Windows Firewall Workshop </h3>
+          <p class="certificate-org"> Microsoft Learn Student Ambassadors</p>
+          <p class="certificate-desc">
+            Participated in a workshop on Azure AI Studio and identity protection using Windows Firewall, organized by Microsoft Learn Student Ambassadors – Sri Lanka as part of the Microsoft Student Champs event on November 30, 2024.
+          </p>
+          <a href="assets/img/MS Champs November.pdf" target="_blank" class="btn-dark">View Certificate</a>
+        </div>
+      </div>
+      
+    </div>
+
+
+    
+
+   
+    
+
+<!-- /Certifications Section -->
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <section class="services" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <!-- ------------------------------------------Projects-------------------------------------------------- -->
+
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/Kaviii18/FitZone-center-Website.git">
+                        <img class="projectimg" src="assets/img/projects/gymweb.jpg" alt="">
+                    </a>
+                </div>
+                <h3>GYM  Management System</h3>
+                <p>
+                    The FitZone Fitness Center Web Application is a gym management system designed to streamline operations and enhance member experience. This platform allows users to register, book classes, manage payments, and access fitness resources, while admins can efficiently handle staff, schedules, and inquiries.
+                </p>
+                <div class="project_skills">
+                    <img src="assets/img/html.png" alt="Image 1">
+                    <img src="assets/img/php.jpg" alt="Image 6">
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/Kaviii18/LuxeVista-Resort-App.git">
+                        <img class="projectimg" src="assets/img/projects/hotel app.jpg" alt="">
+                    </a>
+                </div>
+                <h3>LuxeVista-Resort-App</h3>
+                <p>
+                    A native Android app for LuxeVista Resort that allows guests to book rooms, reserve services, and explore local attractions. Built with Android Studio, Java, and Firebase, the app includes secure login, real-time database integration, and an admin panel for managing hotel operations.
+                </p>
+                <div class="project_skills">
+                    <img src="assets/img/java.png" alt="Image 1">
+                    <img src="assets/img/kotlin.jpg" alt="Image 6">
+                    <img src="assets/img/firebase.png" alt="Image 8">
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/Kaviii18/-Wellnes-Cosmetic-Store.git">
+                        <img class="projectimg" src="assets/img/projects/Cosmetic system.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Cosmetics Store Management System</h3>
+                <p>
+                    Cosmetics Store Management System built with Java & Swing! It features product viewing, adding new products, user account creation for managers/cashiers, product search by name/category/price, and detailed stock viewing. A showcase of my OOP and Java development skills!
+                    </p>
+                <div class="project_skills">
+                    <img src="assets/img/java.png" alt="Image 1">
+                    <img src="assets/img/mysql.png" alt="Image 2">
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/Kaviii18/Eduford.lk-Modern-Educational-Platform.git">
+                        <img class="projectimg" src="assets/img/projects/Eduford web.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Eduford.lk – Modern Educational Platform</h3>
+                <p>Eduford.lk is a responsive educational platform built with HTML, CSS, and JavaScript. It features user-friendly navigation, subject grids, portfolio stats, testimonials, and a validated contact form. The design reflects modern web standards, emphasizing clean layout, performance, and accessibility.
+                    </p>
+                <div class="project_skills">
+                    <img src="assets/img/html.png" alt="Image 1">
+                     <img src="assets/img/java-script.png" alt="Image 1">
+                     
+                </div>
+            </div>
+        </div>
+
+       
+
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="timeline-item">
+            <div class="timeline-content">
+                <div>
+                    <a href="https://github.com/Kaviii18/DonateToFeed.lk-Bridging-Hunger-and-Hope-Through-Food-Donations-in-Sri-Lanka.git">
+                        <img class="projectimg" src="assets/img/projects/food project.jpg" alt="">
+                    </a>
+                </div>
+                <h3>DonateToFeed.lk-Bridging-Hunger-and-Hope-Through-Food-Donations-in-Sri-Lanka</h3>
+                <p>DonateToFeed.lk is a web-based platform that connects food donors with those in need across Sri Lanka. Our mission is to reduce food waste and hunger by enabling individuals, restaurants, and organizations to donate surplus food quickly, safely, and efficiently through a secure system.
+                     </p>
+                <div class="project_skills">
+                    <img src="assets/img/react.jpg" alt="Image 3">
+                    <img src="assets/img/node js.png" alt="Image 6">
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+
+        <!-- -------------------------------------------------------------------------------------------- -->
+
+    </section>
+
+    <!-- <section class="testimonials" id="testimonials">
+        <div class="testimonials-box">
+            <h2 class="heading">Testimonials</h2>
+
+            <div class="wrapper">
+                <div class="testimonial-item">
+                    <img src="1.jpg" alt="">
+                    <h2>Anna</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+
+                    </div>
+                    <p>Working with this team was a fantastic experience! They understood my vision perfectly and
+                        brought it to life with creativity and professionalism. I couldn’t be happier with the results!
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="2.jpg" alt="">
+                    <h2>Bethany</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+
+                    </div>
+                    <p>This team exceeded my expectations! Their attention to detail and commitment to delivering
+                        quality work made all the difference. I highly recommend their services!</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="3.jpg" alt="">
+                    <h2>David</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+
+                    </div>
+                    <p>I was impressed by their expertise and dedication. They transformed my ideas into reality with
+                        precision and creativity. Truly a pleasure to work with!</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form class="contact-form" id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" id="full-name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="phone" placeholder="Phone Number" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/kavindu-maleesha-698123282/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Kaviii18"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#home">About Me</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © Kavindu Maleesha | All rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
+    <script src="app/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(3000);
+    </script>
+
+</body>
+
+</html>
